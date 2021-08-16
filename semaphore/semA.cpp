@@ -42,7 +42,9 @@ int main()
         cout << "read from mem: " << shmMemory << endl;
     }
 
-    SemTimerP(semIdR, 5);
+    if (SemTimerP(semIdR, 5) == -1) {
+        perror("timer P:");
+    }
 
     cout << "A End\n";
 

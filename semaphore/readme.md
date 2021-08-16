@@ -13,6 +13,9 @@
 > semA打印：
 > A write success
 > read from mem: B
+> timer P:: Resource temporarily unavailable
+> A EndA write success
+> read from mem: B
 > A End
 
 > semB打印：
@@ -33,6 +36,7 @@
 - 进程A启动，延时3s，后向共享内存写入字母	`A`，延时3s主要是让进程B，在进行P操作的时候阻塞住。
 - 进程B启动，从共享内存读取到 `A`之后，延时3s，主要是让进程A在P操作的时候阻塞住。
 - 进程B，延时结束，向共享内存写入 `B`，后进行V操作，允许A进行读取。
+- 进程A，继续进行定时P操作，由于此时没有进程进行V操作，所以在5s后P操作超时，进程A结束。
 
 ## 3、实现介绍
 
