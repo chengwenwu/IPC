@@ -42,6 +42,8 @@ int main()
         cout << "read from mem: " << shmMemory << endl;
     }
 
+    SemTimerP(semIdR, 5);
+
     cout << "A End\n";
 
     // 解绑内存
