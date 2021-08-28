@@ -22,6 +22,10 @@
 > read from mem: A
 > write to mem, and B End
 
+3、可以使用 `ipcs -a` 查看所有共享内存、消息队列及信号量，使用 `ipcrm -a`清除所有ipc。
+
+4、如果出现共享内存已经释放了，但是 `ipcs -m`仍然能够查到，且nattch不为0的情况，可以使用 `ipcs -mp`查看哪个进程还在用该共享内存，并将该进程kill，即可。
+
 # 三、原理解释
 
 ## 1、信号量原理
