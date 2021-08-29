@@ -5,7 +5,7 @@
 # 2、目录结构
 
 ```shell
-      .
+.
 ├── msg_queue //消息队列示例
 ├── netlink	// 通过netlink进行内核和用户态通信
 │   └── unicast

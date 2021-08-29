@@ -8,7 +8,8 @@
 
 `./procfs` 可以看到如下打印：
 
-> Linux version 5.11.0-31-generic (buildd@lcy01-amd64-009) (gcc (Ubuntu 10.3.0-1ubuntu1) 10.3.0, GNU ld (GNU Binutils for Ubuntu) 2.36.1) #33-Ubuntu SMP Wed Aug 11 13:19:04 UTC 2021
+> Linux version 5.11.0-31-generic (buildd@lcy01-amd64-009) (gcc (Ubuntu 10.3.0-1ubuntu1) 10.3.0, GNU ld (GNU Binutils for Ubuntu) 2.36.1)#33-Ubuntu SMP Wed Aug 11 13:19:04 UTC 2021
+
 > file-max: 9223372036854775807
 
 # 三、原理解释
